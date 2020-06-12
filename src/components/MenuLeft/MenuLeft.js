@@ -25,6 +25,7 @@ function MenuLeft(props) {
 
     useEffect(() => {
         setActiveMenu(location.pathname);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [location.pathname]);
 
     useEffect(() => {

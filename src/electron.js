@@ -12,8 +12,8 @@ function createWindow() {
   mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`);
   if (isDev) {
     //Open the DevTools.
-    BrowserWindow.addDevToolsExtension('C:\\Users\\luanq\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Extensions\\fmkadmapgofadopljbjfkapdkoienihi\\4.6.0_0');
-    mainWindow.webContents.openDevTools();
+    // BrowserWindow.addDevToolsExtension('C:\\Users\\luanq\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Extensions\\fmkadmapgofadopljbjfkapdkoienihi\\4.6.0_0');
+    // mainWindow.webContents.openDevTools();
   }
   mainWindow.on('closed', () => mainWindow = null);
 }

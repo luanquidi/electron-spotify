@@ -9,7 +9,7 @@ export default function BasicModal(props) {
     const { show, setShow, title, children } = props;
 
     const onClose = () => {
-        setShow(false)
+        setShow(!show);
     }
 
     return (

@@ -4,9 +4,10 @@ import { Switch, Route } from 'react-router-dom';
 
 //Pages
 import Home from '../pages/Home';
+import Settings from '../pages/Settings/Settings';
 
 
-export default function Routes() {
+export default function Routes({user, setReloadApp}) {
     return (
         <Switch>
 
@@ -19,7 +20,7 @@ export default function Routes() {
             </Route>
 
             <Route path="/settings" exact>
-                <h1>Configuración</h1>
+                <Settings user={user} setReloadApp={setReloadApp}/>
             </Route>
 
         </Switch>
